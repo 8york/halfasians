@@ -3,8 +3,17 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `halfasianweb`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Halfasian",
   },
-  plugins: [],
-}
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "footer",
+        path: `${__dirname}/footer`
+      }
+    }
+  ],
+};
