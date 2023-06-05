@@ -1,0 +1,41 @@
+.container {
+    margin: auto;
+    max-width: 960px;
+    font-family: sans-serif;
+  }
+  .site-title {
+    font-size: 3rem;
+    color: gray;
+    font-weight: 700;
+    /* margin: 3rem 0; */
+    text-align: center;
+    display: none;
+
+  }
+  .heading {
+    color: rebeccapurple;
+    text-align: center;
+  }
+  .sub-heading{
+    text-align: center;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+
+  }
+  .nav-link-text {
+    color: rgb(84, 169, 69);
+    text-decoration: none;
+    padding: .3em 1em;
+    background-color: pink;
+    border-radius: 1em;
+  }
+
+  .nav-link-text:hover {
+    color: rgb(158, 64, 57);
+    position: relative;
+    bottom: 4px;
+  }

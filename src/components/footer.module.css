@@ -1,0 +1,52 @@
+.footer {
+    background-color: green;
+    padding:1em;
+}
+@media (min-width: 700px) {
+    .footer{
+        padding-left: 7em;
+    }
+}
+
+.ptag{
+    color:rgb(250, 241, 241);
+}
+.credits {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: .5em;
+}
+
+.credit-list{
+    padding: .3em 1em;
+    background-color: pink;
+    border-radius: 1em;
+}
+
+.credit-list:hover {
+    
+    position: relative;
+    bottom: 4px;
+  }
+
+.credit-link{
+    text-decoration: none;
+    color: rgb(84, 169, 69);
+}
+
+.credit-link:hover{
+    color: rgb(158, 64, 57);
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap:.5em;
+    /* margin-left: 7em; */
+}
+
+.social {
+    color: violet;
+}
