@@ -1,8 +1,6 @@
 import * as React from "react";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
-import remark from "remark";
-// import reactMarkdown from "remark-react";
 
 import {
   footer,
