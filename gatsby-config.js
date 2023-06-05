@@ -8,12 +8,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    `gatsby-transformer-json`,
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "footer",
-        path: `${__dirname}/footer`
-      }
-    }
+        path: `./data/`,
+      },
+    },
+    "gatsby-plugin-mdx",
   ],
 };
