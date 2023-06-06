@@ -37,7 +37,7 @@ const Footer = () => {
             <a
               className={creditLink}
               href={item.link}
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >{` ${item.name} `}</a>
           </div>
         ))}
