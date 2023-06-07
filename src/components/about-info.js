@@ -1,7 +1,13 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
+import {
+        section,
+        sectionHead,
+        imageWrap,
+        imageContainer,
+        imageElement,
+} from "./about.module.css"
 
 const AboutInfo = () => {
   const data = useStaticQuery(graphql`
@@ -16,7 +22,7 @@ const AboutInfo = () => {
                       gatsbyImageData(
                         placeholder: BLURRED
                         formats: [AUTO, WEBP, AVIF]
-                        width: 400
+                        width: 300
                         aspectRatio: 1
                         transformOptions: {fit: COVER}
                       )
@@ -32,16 +38,19 @@ const AboutInfo = () => {
   const aboutData = data.allAboutJson.nodes[0];
   console.log(aboutData);
   return (
-    <section>
+    <section className={section}>
+      <div className={sectionHead}>
       <h2>About</h2>
       <p>{aboutData.About}</p>
-
+      </div>
+      <div className={imageWrap}>
       {aboutData.images.map((image, index) => (
-        <section key={index}>
-          <GatsbyImage image={getImage(image.src)} />
+        <div className={imageContainer} key={index}>
+          <GatsbyImage image={getImage(image.src)} alt={image.alt} className={imageElement}/>
           <p>{image.text}</p>
-        </section>
+        </div>
       ))}
+      </div>
     </section>
   );
 };

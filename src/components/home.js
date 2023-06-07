@@ -6,7 +6,8 @@ import { container } from './home.module.css';
 const Home =()=>{
     return(
         <div className={container}>
-        <StaticImage src="../imgs/logo.jpg" alt="logo" style={{height: "800px"}} />
+        {/* <StaticImage src="../imgs/logo.jpg" alt="logo" style={{height: "800px"}} /> */}
+        {/* <StaticImage src='../assets/images/background.jpg' style={{height: "800px"}}/> */}
         {/* <div className={container} style={{ backgroundImage: `url(${require('../imgs/logo.jpg').default})` }}> */}
         <div className={container}>
             <p>where is the img?</p>

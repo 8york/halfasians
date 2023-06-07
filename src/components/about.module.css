@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(245, 97, 237);
+}
+.section {
+    /* max-width: 960px; */
+ 
+}
+
+.section-head{
+    padding: 1em 25%;
+    background-color: rgb(1, 151, 1);
+
+    
+}
+.image-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    
+}
+.image-container{
+    max-width: 300px;
+}
+.image-element{
+    border-radius: .3em;
+    box-shadow: 3px 3px 7px #222121;
+}
