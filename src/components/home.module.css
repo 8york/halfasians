@@ -4,4 +4,79 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
+
+.haha{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.h, .a{
+    font-size: 10em;
+    font-weight: 900;
+}
+.h{
+    color:rgb(200, 102, 200);
+}
+
+.a{
+    color: rgb(9, 99, 99);
+}
+
+
+@keyframes run {
+    0%  {
+        right:0;
+    }
+    50%{
+        right: 50%;
+        top:50%;
+    }
+    100%{
+        right:0;
+    }
+
+}
+
+@keyframes clockrotate {
+    100% {transform: rotate(360deg);}
+}
+
+
+@keyframes halfrotate {
+    100%{
+        transform: rotateY(180deg);
+    }   
+}
+@keyframes jump {
+    0%{ 
+        transform: translateY(0);
+  
+    }
+    50%{
+        transform: translateY(-200%);
+        left: 70%;
+        /* transform: translateX(50%); */
+    }
+    70%{
+        transform: rotateY(-100%)
+    }
+    100%{
+        transform: translateY(0);
+    }   
+}
+
+.dc{
+    position: absolute;
+    right:0;
+    animation: clockrotate 4s linear infinite, run 8s linear infinite;
+}
+
+.eightyork{
+    position: absolute;
+    bottom: 0;
+    left: 5em;
+    animation: jump 8s linear infinite, halfrotate 4s linear infinite;
+}
+

@@ -3,7 +3,6 @@ import { Link, useStaticQuery, graphql } from "gatsby";
 import {
   container,
   heading,
-  subHeading,
   navLinks,
   navLinkText,
   siteTitle,
@@ -24,7 +23,6 @@ const Layout = ({ pageTitle, children }) => {
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
       <div>
         <h1 className={heading}>{pageTitle}</h1>
-        <p className={subHeading}>Is it Music? </p>
       </div>
       <nav>
         <ul className={navLinks}>

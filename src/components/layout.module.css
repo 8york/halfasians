@@ -16,9 +16,7 @@
     color: rebeccapurple;
     text-align: center;
   }
-  .sub-heading{
-    text-align: center;
-  }
+ 
   .nav-links {
     display: flex;
     justify-content: center;

@@ -1,17 +1,29 @@
 import * as React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 
-import { container } from './home.module.css';
+import { container, animatedImage, dc, eightyork, haha, h, a } from './home.module.css';
 
 const Home =()=>{
     return(
         <div className={container}>
-        {/* <StaticImage src="../imgs/logo.jpg" alt="logo" style={{height: "800px"}} /> */}
-        {/* <StaticImage src='../assets/images/background.jpg' style={{height: "800px"}}/> */}
-        {/* <div className={container} style={{ backgroundImage: `url(${require('../imgs/logo.jpg').default})` }}> */}
-        <div className={container}>
-            <p>where is the img?</p>
-        </div>
+            <div className={haha}>
+            <div className={h}> H</div>
+            <div className={a} >A</div>
+            </div>
+            <div className={animatedImage}>
+            <StaticImage className={dc}
+        alt="DC dancing all over the screen"
+        src="../../assets/images/3HalfAsian.png"
+      />
+            </div>
+            <div className={animatedImage}>
+            <StaticImage className={eightyork}
+        alt="8 york dancing"
+        src="../../assets/images/4HalfAsian.png"
+      />
+            </div>
+            <p>Is it music?</p>
+            <p>where is the music?</p>
         </div>
     )
 }
