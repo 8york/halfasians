@@ -1,14 +1,15 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import ImageGallery from "../components/images";
 const About = () => {
   return (
   <div>
   <Layout pageTitle="LOOK"></Layout>
   <main>
-    <section>
-    <p>does it display?</p>
-    </section>
+      <h2>What a Gallery</h2>
+      <p>All these images</p>
+    <ImageGallery />
   </main>
   <Footer />
   </div>

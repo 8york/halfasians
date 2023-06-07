@@ -1,55 +1,51 @@
-[{
-    "smallImage": "../src/imgs/hahadrawing.jpg",
-    "largeImage": "../src/imgs/hahadrawing.jpg",
-    "text": "can we split our faces into half and put half together to see what happens?",
-    "alt": "drawing of halfasian scratched into poraloid"
-  },
+[
   {
-    "smallImage": "../src/imgs/haphoto1.jpg",
-    "largeImage": "../src/imgs/haphoto1.jpg",
-    "text": "Each of the Halfasian were born in different hemisphere but both spent a lot of time in a Sub-Tropic climate growing up. At some point, each half of Halfasian made a decision and ended up living in a place where everything is unpredictable far away from sub-tropics",
-    "alt": "ladyfinger"
-  },
-  {
-    "smallImage": "..src/img/hatesting2.jpg",
-    "largeImage": "..src/img/hatesting2.jpg",
-    "text": "Halfasian started becaue of this exhibition at  testing ground currated by the Wandering Room. 6 songs were written, but not so reharsed during weekly meetups over 6 weeks.",
-    "alt": "testingground"
-  },
-  {
-    "smallImage": "img/left.jpg",
-    "largeImage": "img/haawktim.jpg",
-    "text": "performing a song dedicated to Arnie, with a guest performer Illbefluence, entangled in the awkwardnessfull of sculpture.",
-    "alt": "tim"
-  },
-  {
-    "smallImage": "img/awkcloseup.jpg",
-    "largeImage": "img/awkcloseup.jpg",
-    "text": "Wearble sculpture created for an exhibition, Awkwarder, April 2019. At the entire opening event for this exhibition, Halfasian were linked with this work and played 3 sets. For our second set, illbefluence was invited to be the part of the awkward link with the band.",
-    "alt": "closeup"
-  },
-  {
-    "smallImage": "img/right(1).jpg",
-    "largeImage": "img/hatired.jpg",
-    "text": "2 hours of being linked together sociallising and performing. It was quite awkward and exhausting as it was meant to be, and glad that none of us had natures calling during the 2 hours.",
-    "alt": "front"
-  },
-  {
-    "smallImage": "img/haballrooomgreet.jpg",
-    "largeImage": "img/ballroom.jpg",
-    "text": "Between lockdown 5 and 6 in 2021, Monnone Aloneinvited Halfasian to play before their show at Brunswick Ballroom. First when we were asked, the show was going to be at a venue downstairs from the Ballroom, much smaller capacity. It turned out, their capacity was maxed out and decision was made to move the show to upstairs.  Halfasian was quite sure that this show will not go on because of the pandemic restrictions, but practised over video calls just in case. First time and possibly last time Halfasian played a show with a microphone, a sound system and lighting. This will be talked about as a 25 mins of fame till we stop.",
-    "alt": "ballroom"
-  },
-  {
-    "smallImage": "img/hajamiecake.jpg",
-    "largeImage": "img/hawithjamie.jpg",
-    "text": "Getting ready to surprise a friend at her work with a cake and a song written a dedictaion song on her birthday.",
-    "alt": "jamiecake"
-  },
-  {
-    "smallImage": "img/hahaha.jpg",
-    "largeImage": "img/haha.jpg",
-    "text": "Halfasian is not a musician, but have ideas and deliver the idea through sounds and laughing a lot while working.",
-    "alt": "haha"
+    "images": [
+      {
+        "image": "../images/hahadrawing.jpg",
+        "text": "can we split our faces into half and put half together to see what happens?",
+        "alt": "drawing of halfasian scratched into poraloid"
+      },
+      {
+        "image": "../images/haatarnie.jpg",
+        "text": "Halfasian wrote a song about Arnold Schwarzneger and went to perform it outside of the ",
+        "alt": "Halfasian excursion to find Arnie at annual Arnie Classic"
+      },
+      {
+        "image": "../images/hasee.jpg",
+        "text": "Halfasian tangled up in a sculpture and played three 7 mins sets at an openening 'Awkarder' curated by the Wandering Room",
+        "alt": "halfasian tangled up in a sculpture"
+      },
+      {
+        "image": "../images/hawithtim.jpg",
+        "text": "performing a song dedicated to Arnie, with a guest performer Illbefluence, entangled in the awkwardnessfull of sculpture.",
+        "alt": "Halfasian with Illbefluence after the performance"
+      },
+      {
+        "image": "../images/awk.jpg",
+        "text": "Wearble sculpture created for an exhibition, Awkwarder, April 2019. At the entire opening event for this exhibition, Halfasian were linked with this work and played 3 sets. For our second set, illbefluence was invited to be the part of the awkward link with the band.",
+        "alt": "closeup"
+      },
+      {
+        "image": "../images/hatired.jpg",
+        "text": "2 hours of being linked together sociallising and performing. It was quite awkward and exhausting as it was meant to be, and glad that none of us had natures calling during the 2 hours.",
+        "alt": "Halfasian linked together in a wearble sclupture and attempting to rest between sets."
+      },
+      {
+        "image": "../images/perform.jpeg",
+        "text": "Halfasian made a song and a film crip dedicated to Monnone Alone in March 2021. Between lockdown 5 and 6 in the same year, Monnone Alone invited Halfasian to play with them at Brunswick Ballroom. Halfasian was quite sure that this show will be cancelled due to the pandemic restrictions, but practised over video calls just in case. First time and possibly last time Halfasian played a show with a microphone, a sound system and lighting. This will be talked about as a 25 mins of fame till we stop.",
+        "alt": "ballroom"
+      },
+      {
+        "image": "../images/bbqparty.jpg",
+        "text": "One of the best honoured moments for Halfasian was to be asked to play with Burnt Sausages in 2022. We all had fun at the BBQ Party song",
+        "alt": "Halfasian with Burnt Sausages and Packaged-Goods"
+      },
+      {
+        "image": "../images/tobiwithdevice.jpg",
+        "text": "Each of the Halfasian were born in different hemisphere but both spent a lot of time in a Sub-Tropic climate growing up. At some point, each half of Halfasian made a decision and ended up living in a place where everything is unpredictable far away from sub-tropics.",
+        "alt": "Halfasin photo taken by Tobias Titz"
+      }
+    ]
   }
 ]

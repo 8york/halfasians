@@ -1,5 +1,5 @@
 .footer {
-    background-color: green;
+    background-color: rgb(1, 151, 1);
     padding:1em;
 }
 @media (min-width: 700px) {

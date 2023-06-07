@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(40, 120, 40);
+}
+.images-container{
+    max-width: 770px;
+    margin: 0 auto;
+    display:grid;
+   grid-template-columns: repeat(3, 1fr);  
+}
+
