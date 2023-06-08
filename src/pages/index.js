@@ -5,6 +5,7 @@ import Footer from '../components/footer'
 import Home from '../components/home'
 
 
+
 const IndexPage =() => {
   return(
    <>

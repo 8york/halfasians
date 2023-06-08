@@ -41,6 +41,11 @@ const Layout = ({ pageTitle, children }) => {
               All to see
             </Link>
           </li>
+          {/* <li>
+            <Link to="/bigimage" className={navLinkText}>
+              All to see
+            </Link>
+          </li> */}
         </ul>
       </nav>
     </div>
