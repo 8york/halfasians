@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import Footer from "../components/footer";
 import ImageGallery from "../components/images";
 import Video from "../components/video";
-const About = () => {
+const Gallery = () => {
   return (
   <div>
   <Layout pageTitle="LOOK"></Layout>
@@ -17,5 +17,5 @@ const About = () => {
   )
 };
 
-export const Head = () => <title>About</title>;
-export default About;
+export const Head = () => <title>Gallery</title>;
+export default Gallery;
