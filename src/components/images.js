@@ -40,12 +40,16 @@ const ImageGallery = () => {
   `);
   const imageData = data.allImagesJson.nodes[0];
 
-  const [selectedImg, setSelectedImg] = useState(null);
+  const [selectedText, setSelectedText] = useState(null);
   const [showModal, setShowModal] = useState(false);
+
+  // const showText =()=>{
+  //   setSelectedText(selectedText)
+  // }
   const toggleModal = () => {
     setShowModal(!showModal);
   };
-  
+
   return (
     <section>
       <h2 className={galleryTwo}>What a Gallery</h2>
@@ -56,8 +60,8 @@ const ImageGallery = () => {
             <div
               className={textOverImg}
               key={index}
-              onMouseOver={() => setSelectedImg(index)}
-              onMouseOut={() => setSelectedImg(null)}
+              onMouseOver={() => setSelectedText(index)}
+              onMouseOut={() => setSelectedText(null)}
               onClick={toggleModal}
             >
               <GatsbyImage
@@ -65,8 +69,8 @@ const ImageGallery = () => {
                 alt={image.alt}
                 className={galleryImg}
               />
-              <p className={imgText}>{image.text}</p>
-              {selectedImg === index ? (
+              
+              {selectedText === index ? (
                 <p className={fullText}>{image.text}</p>
               ) : (
                 <p className={imgText}>{image.text}</p>
@@ -75,7 +79,7 @@ const ImageGallery = () => {
           );
         })}
       </div>
-      <ImageModal showModal={showModal} closeModal={toggleModal}/>
+      <ImageModal showModal={showModal} closeModal={toggleModal} />
     </section>
   );
 };

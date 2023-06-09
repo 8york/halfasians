@@ -7,6 +7,7 @@ import {
         imageWrap,
         imageContainer,
         imageElement,
+        imageText
 } from "./about.module.css"
 
 const AboutInfo = () => {
@@ -22,7 +23,7 @@ const AboutInfo = () => {
                       gatsbyImageData(
                         placeholder: BLURRED
                         formats: [AUTO, WEBP, AVIF]
-                        width: 300
+                        width: 250
                         aspectRatio: 1
                         transformOptions: {fit: COVER}
                       )
@@ -47,7 +48,7 @@ const AboutInfo = () => {
       {aboutData.images.map((image, index) => (
         <div className={imageContainer} key={index}>
           <GatsbyImage image={getImage(image.src)} alt={image.alt} className={imageElement}/>
-          <p>{image.text}</p>
+          <p className={imageText}>{image.text}</p>
         </div>
       ))}
       </div>

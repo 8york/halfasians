@@ -1,9 +1,12 @@
-.video-container{
-    display: flex;
-    justify-content: center;
-    gap:1em;
-    margin-top: 2em;
+@media (min-width: 850px) {
+    .video-container{
+        display: flex;
+        justify-content: center;
+        gap:1em;
+        margin-top: 2em;
+    } 
 }
+
 
 .video-wrap {
     display: flex;

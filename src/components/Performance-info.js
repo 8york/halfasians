@@ -7,6 +7,7 @@ import {
   imageWrap,
   imageContainer,
   imageElement,
+  imageText
 } from "./about.module.css"
 import {
   videoContainer,
@@ -25,7 +26,7 @@ const Performance = () => {
                 gatsbyImageData(
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
-                  width: 400
+                  width: 250
                   aspectRatio: 1
                   transformOptions: {fit: COVER}
                 )
@@ -52,7 +53,7 @@ const Performance = () => {
           <GatsbyImage 
             image={getImage(image.src)} 
             alt={image.alt} className={imageElement}/>
-          <p>{image.text}</p>
+          <p className={imageText}>{image.text}</p>
           </div>);
 })}
       </div>
