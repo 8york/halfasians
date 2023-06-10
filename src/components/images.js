@@ -20,34 +20,35 @@ const ImageGallery = () => {
     query {
       allImagesJson {
         nodes {
-          images {
-            alt
-            text
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  formats: AUTO
-                  aspectRatio: 1
-                  height: 250
-                  transformOptions: { fit: COVER }
-                )
-              }
+          alt
+          text
+          image {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(
+                formats: AUTO
+                aspectRatio: 1
+                height: 250
+                transformOptions: { fit: COVER }
+              )
             }
           }
         }
       }
     }
   `);
-  const imageData = data.allImagesJson.nodes[0];
+  const imageData = data.allImagesJson.nodes;
 
   const [selectedText, setSelectedText] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [currentImageUrl, setCurrentImageUrl] = useState(null);
 
   // const showText =()=>{
   //   setSelectedText(selectedText)
   // }
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const showImage = (image) => {
+    setShowModal(true);
+    setCurrentImageUrl(image.publicURL);
   };
 
   return (
@@ -55,21 +56,21 @@ const ImageGallery = () => {
       <h2 className={galleryTwo}>What a Gallery</h2>
       <p className={galleryPtag}>CLICK ON!</p>
       <div className={imagesContainer}>
-        {imageData.images.map((image, index) => {
+        {imageData.map((image, index) => {
           return (
             <div
               className={textOverImg}
               key={index}
               onMouseOver={() => setSelectedText(index)}
               onMouseOut={() => setSelectedText(null)}
-              onClick={toggleModal}
+              onClick={() => showImage(image.image)}
             >
               <GatsbyImage
                 image={getImage(image.image)}
                 alt={image.alt}
                 className={galleryImg}
               />
-              
+
               {selectedText === index ? (
                 <p className={fullText}>{image.text}</p>
               ) : (
@@ -79,7 +80,11 @@ const ImageGallery = () => {
           );
         })}
       </div>
-      <ImageModal showModal={showModal} closeModal={toggleModal} />
+      <ImageModal
+        showModal={showModal}
+        closeModal={() => setShowModal(false)}
+        src={currentImageUrl}
+      />
     </section>
   );
 };

@@ -5,7 +5,9 @@ import Modal from "./modal.js";
 
 const ImageModal = (props) => {
   return (
-    <Modal showModal={props.showModal} closeModal={props.closeModal}>My Image</Modal>
+    <Modal showModal={props.showModal} closeModal={props.closeModal}>
+      <img src={props.src}/>
+    </Modal>
   );
 };
 
