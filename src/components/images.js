@@ -1,9 +1,7 @@
 import * as React from "react";
 import { useState } from "react";
-import { graphql, useStaticQuery } from "gatsby";
+import { navigate, graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
-import ImageModal from "./modal/modal-image.js";
 
 import {
   imagesContainer,
@@ -20,34 +18,29 @@ const ImageGallery = () => {
     query {
       allImagesJson {
         nodes {
-          images {
-            alt
-            text
-            image {
-              childImageSharp {
-                gatsbyImageData(
-                  formats: AUTO
-                  aspectRatio: 1
-                  height: 250
-                  transformOptions: { fit: COVER }
-                )
-              }
+          id
+          alt
+          text
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                formats: AUTO
+                aspectRatio: 1
+                height: 250
+                transformOptions: { fit: COVER }
+              )
             }
           }
         }
       }
     }
   `);
-  const imageData = data.allImagesJson.nodes[0];
+  const imageData = data.allImagesJson.nodes;
 
   const [selectedText, setSelectedText] = useState(null);
-  const [showModal, setShowModal] = useState(false);
 
-  // const showText =()=>{
-  //   setSelectedText(selectedText)
-  // }
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const onImageClick = (imageId) => {
+    navigate(`/image/${imageId}`);
   };
 
   return (
@@ -55,31 +48,31 @@ const ImageGallery = () => {
       <h2 className={galleryTwo}>What a Gallery</h2>
       <p className={galleryPtag}>CLICK ON!</p>
       <div className={imagesContainer}>
-        {imageData.images.map((image, index) => {
+        {/* map to render images and texts from images.json */}
+        {imageData.map((image, index) => {
           return (
             <div
               className={textOverImg}
               key={index}
               onMouseOver={() => setSelectedText(index)}
               onMouseOut={() => setSelectedText(null)}
-              onClick={toggleModal}
+              onClick={() => onImageClick(image.id)}
             >
+              {/* render images and alt from json file */}
               <GatsbyImage
                 image={getImage(image.image)}
                 alt={image.alt}
                 className={galleryImg}
               />
-              
-              {selectedText === index ? (
-                <p className={fullText}>{image.text}</p>
-              ) : (
-                <p className={imgText}>{image.text}</p>
-              )}
+
+              {/* texts are scrollable when moseover on the image, if not overflow text is hidden */}
+              <p className={selectedText === index ? fullText : imgText}>
+                {image.text}
+              </p>
             </div>
           );
         })}
       </div>
-      <ImageModal showModal={showModal} closeModal={toggleModal} />
     </section>
   );
 };

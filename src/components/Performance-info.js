@@ -14,7 +14,8 @@ import {
   videoWrap
 } from "./video.module.css"
 const Performance = () => {
-    const data = useStaticQuery(graphql`
+    // access data from performance.json to render in performance section in about page 
+  const data = useStaticQuery(graphql`
     query{
       allPerformanceJson {
         nodes {
@@ -40,7 +41,6 @@ const Performance = () => {
     `);
 
     const performanceData = data.allPerformanceJson.nodes[0];
-    console.log(performanceData);
     return(
     <section className={section}>
       <div className={sectionHead}>
