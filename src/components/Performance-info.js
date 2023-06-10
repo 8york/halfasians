@@ -7,13 +7,15 @@ import {
   imageWrap,
   imageContainer,
   imageElement,
+  imageText
 } from "./about.module.css"
 import {
   videoContainer,
   videoWrap
 } from "./video.module.css"
 const Performance = () => {
-    const data = useStaticQuery(graphql`
+    // access data from performance.json to render in performance section in about page 
+  const data = useStaticQuery(graphql`
     query{
       allPerformanceJson {
         nodes {
@@ -25,7 +27,7 @@ const Performance = () => {
                 gatsbyImageData(
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
-                  width: 400
+                  width: 250
                   aspectRatio: 1
                   transformOptions: {fit: COVER}
                 )
@@ -39,7 +41,6 @@ const Performance = () => {
     `);
 
     const performanceData = data.allPerformanceJson.nodes[0];
-    console.log(performanceData);
     return(
     <section className={section}>
       <div className={sectionHead}>
@@ -52,7 +53,7 @@ const Performance = () => {
           <GatsbyImage 
             image={getImage(image.src)} 
             alt={image.alt} className={imageElement}/>
-          <p>{image.text}</p>
+          <p className={imageText}>{image.text}</p>
           </div>);
 })}
       </div>

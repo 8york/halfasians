@@ -22,7 +22,7 @@ const Modal = (props) => {
           width: "80%",
         }}
       >
-        <button onClick={props.closeModal}>close</button>
+        <button onClick={props.closeModal}>X</button>
         <div>
           {props.children}
         </div>
