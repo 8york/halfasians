@@ -1,57 +1,51 @@
 [
   {
-    "image": "../images/hahadrawing.jpg",
-    "text": "can we split our faces into half and put half together to see what happens?",
-    "alt": "drawing of halfasian scratched into poraloid"
-  },
-  {
-    "image": "../images/haatarnie.jpg",
-    "text": "Halfasian wrote a song about Arnold Schwarzneger and went to perform it outside of the ",
-    "alt": "Halfasian excursion to find Arnie at annual Arnie Classic"
-  },
-  {
-    "image": "../images/hasee.jpg",
-    "text": "Halfasian tangled up in a sculpture and played three 7 mins sets at an openening 'Awkarder' curated by the Wandering Room",
-    "alt": "halfasian tangled up in a sculpture"
-  },
-  {
-    "image": "../images/hawithtim.jpg",
-    "text": "performing a song dedicated to Arnie, with a guest performer Illbefluence, entangled in the awkwardnessfull of sculpture.",
-    "alt": "Halfasian with Illbefluence after the performance"
-  },
-  {
-    "image": "../images/awk.jpg",
-    "text": "Wearble sculpture created for an exhibition, Awkwarder, April 2019. At the entire opening event for this exhibition, Halfasian were linked with this work and played 3 sets. For our second set, illbefluence was invited to be the part of the awkward link with the band.",
-    "alt": "closeup"
-  },
-  {
-    "image": "../images/hatired.jpg",
-    "text": "2 hours of being linked together sociallising and performing. It was quite awkward and exhausting as it was meant to be, and glad that none of us had natures calling during the 2 hours.",
-    "alt": "Halfasian linked together in a wearble sclupture and attempting to rest between sets."
-  },
-  {
-    "image": "../images/perform.jpeg",
-    "text": "Halfasian made a song and a film crip dedicated to Monnone Alone in March 2021. Between lockdown 5 and 6 in the same year, Monnone Alone invited Halfasian to play with them at Brunswick Ballroom. Halfasian was quite sure that this show will be cancelled due to the pandemic restrictions, but practised over video calls just in case. First time and possibly last time Halfasian played a show with a microphone, a sound system and lighting. This will be talked about as a 25 mins of fame till we stop.",
-    "alt": "ballroom"
-  },
-  {
-    "image": "../images/bbqparty.jpg",
-    "text": "One of the best honoured moments for Halfasian was to be asked to play with Burnt Sausages in 2022. We all had fun at the BBQ Party song",
-    "alt": "Halfasian with Burnt Sausages and Packaged-Goods"
-  },
-  {
-    "image": "../images/tobiwithdevice.jpg",
-    "text": "Each of the Halfasian were born in different hemisphere but both spent a lot of time in a Sub-Tropic climate growing up. At some point, each half of Halfasian made a decision and ended up living in a place where everything is unpredictable far away from sub-tropics.",
-    "alt": "Halfasin photo taken by Tobias Titz"
-  },
-  {
-    "image": "../images/seveninch.jpg",
-    "text": "Each of the Halfasian were born in different hemisphere but both spent a lot of time in a Sub-Tropic climate growing up. At some point, each half of Halfasian made a decision and ended up living in a place where everything is unpredictable far away from sub-tropics.",
-    "alt": "7 inch made for Erlend Oye"
-  },
-  {
-    "image": "../images/logo.jpg",
-    "text": "Each of the Halfasian were born in different hemisphere but both spent a lot of time in a Sub-Tropic climate growing up. At some point, each half of Halfasian made a decision and ended up living in a place where everything is unpredictable far away from sub-tropics.",
-    "alt": "Halfasin photo taken by Tobias Titz"
+    "images": [
+      {
+        "image": "../images/hahadrawing.jpg",
+        "text": "can we split our faces into half and put half together to see what happens?",
+        "alt": "drawing of halfasian scratched into poraloid"
+      },
+      {
+        "image": "../images/haatarnie.jpg",
+        "text": "Halfasian wrote a song about Arnold Schwarzneger and went to perform it outside of the ",
+        "alt": "Halfasian excursion to find Arnie at annual Arnie Classic"
+      },
+      {
+        "image": "../images/hasee.jpg",
+        "text": "Halfasian tangled up in a sculpture and played three 7 mins sets at an openening 'Awkarder' curated by the Wandering Room",
+        "alt": "halfasian tangled up in a sculpture"
+      },
+      {
+        "image": "../images/hawithtim.jpg",
+        "text": "performing a song dedicated to Arnie, with a guest performer Illbefluence, entangled in the awkwardnessfull of sculpture.",
+        "alt": "Halfasian with Illbefluence after the performance"
+      },
+      {
+        "image": "../images/awk.jpg",
+        "text": "Wearble sculpture created for an exhibition, Awkwarder, April 2019. At the entire opening event for this exhibition, Halfasian were linked with this work and played 3 sets. For our second set, illbefluence was invited to be the part of the awkward link with the band.",
+        "alt": "closeup"
+      },
+      {
+        "image": "../images/hatired.jpg",
+        "text": "2 hours of being linked together sociallising and performing. It was quite awkward and exhausting as it was meant to be, and glad that none of us had natures calling during the 2 hours.",
+        "alt": "Halfasian linked together in a wearble sclupture and attempting to rest between sets."
+      },
+      {
+        "image": "../images/perform.jpeg",
+        "text": "Halfasian made a song and a film crip dedicated to Monnone Alone in March 2021. Between lockdown 5 and 6 in the same year, Monnone Alone invited Halfasian to play with them at Brunswick Ballroom. Halfasian was quite sure that this show will be cancelled due to the pandemic restrictions, but practised over video calls just in case. First time and possibly last time Halfasian played a show with a microphone, a sound system and lighting. This will be talked about as a 25 mins of fame till we stop.",
+        "alt": "ballroom"
+      },
+      {
+        "image": "../images/bbqparty.jpg",
+        "text": "One of the best honoured moments for Halfasian was to be asked to play with Burnt Sausages in 2022. We all had fun at the BBQ Party song",
+        "alt": "Halfasian with Burnt Sausages and Packaged-Goods"
+      },
+      {
+        "image": "../images/tobiwithdevice.jpg",
+        "text": "Each of the Halfasian were born in different hemisphere but both spent a lot of time in a Sub-Tropic climate growing up. At some point, each half of Halfasian made a decision and ended up living in a place where everything is unpredictable far away from sub-tropics.",
+        "alt": "Halfasin photo taken by Tobias Titz"
+      }
+    ]
   }
 ]

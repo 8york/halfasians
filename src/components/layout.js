@@ -9,7 +9,6 @@ import {
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
-  // data about the site
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -21,12 +20,10 @@ const Layout = ({ pageTitle, children }) => {
   `);
   return (
     <div className={container}>
-      {/* header to be rendered from the metadata */}
       <header className={siteTitle}>{data.site.siteMetadata.title}</header>
       <div>
         <h1 className={heading}>{pageTitle}</h1>
       </div>
-      {/* links to different pages */}
       <nav>
         <ul className={navLinks}>
           <li>
@@ -44,6 +41,11 @@ const Layout = ({ pageTitle, children }) => {
               All to see
             </Link>
           </li>
+          {/* <li>
+            <Link to="/bigimage" className={navLinkText}>
+              All to see
+            </Link>
+          </li> */}
         </ul>
       </nav>
     </div>
