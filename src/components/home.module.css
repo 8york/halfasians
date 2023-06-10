@@ -24,7 +24,7 @@
 
 .a{
     color: rgb(9, 99, 99);
-    animation: move-left 5s linear infinite;
+    animation: shake 5s linear infinite;
 }
 
 /* animation for dc */
@@ -57,10 +57,10 @@
 
 @keyframes move-left {
     0%{
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
     50%{
-        transform: translateX(200%)
+        transform: translateX(400%)
     }
     100%{
         transform: translateX(50%);
@@ -78,19 +78,44 @@
 @keyframes jump {
     0%{ 
         transform: translateY(0);
-  
     }
     50%{
-        transform: translateY(-200%);
+        transform: translateY(-80%);
         left: 70%;
         /* transform: translateX(50%); */
     }
     70%{
-        transform: rotateY(-100%)
+        transform: transrateY(-100%)
     }
     100%{
         transform: translateY(0);
     }   
+}
+
+@keyframes jumptwo {
+    0% {
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing  {
+    0% { transform: rotate(8deg); }
+    50% { transform: rotate(-8deg); }
+    100% { transform: rotate(8deg); }
+}
+
+@keyframes flash{
+    0%{opacity: 1;
+    }
+    100%{
+        opacity: .2;
+    }
 }
 
 .dc{
@@ -106,18 +131,56 @@
     animation: jump 8s linear infinite, halfrotate 4s linear infinite;
 }
 
-
-
 .second-img{
-    display: flex;
+    display: none;
 }
-.another-dc{
+
+@media (min-width: 700px){
+    .second-img{
+        display: flex;
+    }
+    
+    .another-dc{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top:0;
+    animation: jumptwo 3s infinite;
 } 
 
 .another-eight-york{
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    animation: swing 3s ease-in-out infinite;
+}.another-dc{
+    position: absolute;
+    top:0;
+    animation: jumptwo 3s infinite;
+} 
+
+.another-eight-york{
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    animation: swing 3s ease-in-out infinite;
+}
+}
+
+
+.is-it-music{
+    /* display: inline; */
+    max-width: 100vw;
+    color:blueviolet;
+    padding: .5em 0;
+    /* margin: 25%; */
+    /* transform: translateX(-50%); */
+    /* transform: translateX(-25%); */
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+    /* padding: 1em; */
+    /* background-color: rgba(233, 233, 48, .2); */
+    border-radius: .3em;
+    animation: flash 1s linear infinite;
 
 }
 

@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(245, 97, 237);
+    background-image: url('../../assets/images/abstract1.png');
+    background-size: cover;
+    background-repeat:  no-repeat;
 }
 
 .section-head{
