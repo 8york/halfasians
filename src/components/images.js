@@ -80,11 +80,12 @@ const ImageGallery = () => {
           );
         })}
       </div>
+      { showModal &&
       <ImageModal
-        showModal={showModal}
         closeModal={() => setShowModal(false)}
         src={currentImageUrl}
       />
+      }
     </section>
   );
 };

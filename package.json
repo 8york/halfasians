@@ -27,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-markdown": "^8.0.7",
+    "react-modal-image": "^2.6.0",
     "remark": "^14.0.3"
   }
 }
