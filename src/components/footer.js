@@ -17,8 +17,7 @@ const acknowledgement =
   "Halfasian would like to acknowledgethe Traditional Owners and Custodians of the land on which we live, the Peoples of the Kulin Nation. Halfasian also pay the respects to their Elders past and present";
 
 const Footer = () => {
-  // access data, footer.json to get links for image credits 
-  const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
     {
       allCreditsJson {
         nodes {

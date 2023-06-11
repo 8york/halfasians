@@ -1,7 +1,9 @@
 import * as React from "react";
 import { useState } from "react";
-import { navigate, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+import ImageModal from "./modal/modal-image.js";
 
 import {
   imagesContainer,
@@ -18,10 +20,10 @@ const ImageGallery = () => {
     query {
       allImagesJson {
         nodes {
-          id
           alt
           text
           image {
+            publicURL
             childImageSharp {
               gatsbyImageData(
                 formats: AUTO
@@ -38,9 +40,15 @@ const ImageGallery = () => {
   const imageData = data.allImagesJson.nodes;
 
   const [selectedText, setSelectedText] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [currentImageUrl, setCurrentImageUrl] = useState(null);
 
-  const onImageClick = (imageId) => {
-    navigate(`/image/${imageId}`);
+  // const showText =()=>{
+  //   setSelectedText(selectedText)
+  // }
+  const showImage = (image) => {
+    setShowModal(true);
+    setCurrentImageUrl(image.publicURL);
   };
 
   return (
@@ -48,7 +56,6 @@ const ImageGallery = () => {
       <h2 className={galleryTwo}>What a Gallery</h2>
       <p className={galleryPtag}>CLICK ON!</p>
       <div className={imagesContainer}>
-        {/* map to render images and texts from images.json */}
         {imageData.map((image, index) => {
           return (
             <div
@@ -56,23 +63,29 @@ const ImageGallery = () => {
               key={index}
               onMouseOver={() => setSelectedText(index)}
               onMouseOut={() => setSelectedText(null)}
-              onClick={() => onImageClick(image.id)}
+              onClick={() => showImage(image.image)}
             >
-              {/* render images and alt from json file */}
               <GatsbyImage
                 image={getImage(image.image)}
                 alt={image.alt}
                 className={galleryImg}
               />
 
-              {/* texts are scrollable when moseover on the image, if not overflow text is hidden */}
-              <p className={selectedText === index ? fullText : imgText}>
-                {image.text}
-              </p>
+              {selectedText === index ? (
+                <p className={fullText}>{image.text}</p>
+              ) : (
+                <p className={imgText}>{image.text}</p>
+              )}
             </div>
           );
         })}
       </div>
+      { showModal &&
+      <ImageModal
+        closeModal={() => setShowModal(false)}
+        src={currentImageUrl}
+      />
+      }
     </section>
   );
 };
