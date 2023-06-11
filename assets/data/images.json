@@ -54,12 +54,9 @@
     "text": "Halfasian has tshirts to sell All the t-shirts are designed, stencilled and handprinted at DC StyleFlyez studio. Due to the nature of printing-by-hand, each tshirt is uqique. It's often available only in pink",
     "alt": "halfasian tshirt design, two faces cut into half and put together to make a face."
   },
-
-    {
-      "image": "../images/screen.jpg",
-      "text": "This is the skelton of the tshirt design.",
-      "alt": "stencil for tshirt with blue and red ink"
-    }
-
-  
+  {
+    "image": "../images/screen.jpg",
+    "text": "This is the skelton of the tshirt design.",
+    "alt": "stencil for tshirt with blue and red ink"
+  }
 ]

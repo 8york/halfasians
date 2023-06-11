@@ -11,7 +11,6 @@ import {
 } from "./about.module.css"
 
 const AboutInfo = () => {
-//  access data from about.json to render info
   const data = useStaticQuery(graphql`
     query{
         allAboutJson {
@@ -38,17 +37,13 @@ const AboutInfo = () => {
     `);
 
   const aboutData = data.allAboutJson.nodes[0];
-  
+  console.log(aboutData);
   return (
     <section className={section}>
       <div className={sectionHead}>
       <h2>About</h2>
-      
-      {/* infor coming from json file */}
-      <p dangerouslySetInnerHTML={{__html: aboutData.About }} />
+      <p>{aboutData.About}</p>
       </div>
-      
-      {/* map some images and texts */}
       <div className={imageWrap}>
       {aboutData.images.map((image, index) => (
         <div className={imageContainer} key={index}>
