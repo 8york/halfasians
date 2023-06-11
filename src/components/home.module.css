@@ -22,6 +22,7 @@
 
 .a{
     color: rgb(9, 99, 99);
+    animation: move-left 5s linear infinite;
 }
 
 
@@ -49,22 +50,68 @@
         transform: rotateY(180deg);
     }   
 }
+
+@keyframes move-left {
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(200%)
+    }
+    100%{
+        transform: translateX(50%);
+    }   
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-180deg); }
+    100% { transform: rotate(0deg); }
+  }
+/* animation for 8york */
 @keyframes jump {
     0%{ 
         transform: translateY(0);
-  
     }
     50%{
-        transform: translateY(-200%);
+        transform: translateY(-80%);
         left: 70%;
         /* transform: translateX(50%); */
     }
     70%{
-        transform: rotateY(-100%)
+        transform: transrateY(-100%)
     }
     100%{
         transform: translateY(0);
     }   
+}
+
+@keyframes jumptwo {
+    0% {
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing  {
+    0% { transform: rotate(8deg); }
+    50% { transform: rotate(-8deg); }
+    100% { transform: rotate(8deg); }
+}
+
+@keyframes flash{
+    0%{opacity: 1;
+    }
+    100%{
+        opacity: .2;
+    }
 }
 
 .dc{
@@ -78,5 +125,20 @@
     bottom: 0;
     left: 5em;
     animation: jump 8s linear infinite, halfrotate 4s linear infinite;
+}
+
+
+
+.second-img{
+    display: flex;
+}
+.another-dc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} 
+
+.another-eight-york{
+
 }
 
