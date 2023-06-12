@@ -1,17 +1,35 @@
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+import VideoComponent from "./video-usable";
 import {
   section,
   sectionHead,
   imageWrap,
   imageContainer,
   imageElement,
+  
   imageText,
- textAndImages
+  textAndImages,
 } from "./about.module.css";
 
-import { videoContainer, videoWrap } from "./video.module.css";
+import { videoContainer, videoWrap, vimeo } from "./video.module.css";
+
+const videos = [
+  // {
+  //   videoUrl: "https://player.vimeo.com/video/258469872?h=3b1b6931b6",
+  //   text: "The First time ever performance at an exhibition, 2Q18 at Testing Grounds in early 2018. This group exhibition was themed around a novel, 1Q84, by Haruki Murakami. Halfasian made 6 songs inspired by surreal but realistic novel and performed at the opening event walking around and played at unregular intervals"
+  // },
+  {
+    videoUrl: "https://www.youtube.com/embed/SWlkk6X15ho",
+    text: "First time ever playing with sound system and microphone at Brunswick Ballroom supporting Monnone Alonebetween lockdowns in 2021. How could we play sold out show under strict pandemic rules and restrictions that we were sure that the show will be canceled. ",
+  },
+  {
+    videoUrl: "https://www.youtube.com/embed/V_KCngNhyu8",
+    text: "We lost all our senses for a little while when our inspiration The burnt Sausages invited us to play at a show with them. Still living with the hype and for ever.",
+  },
+];
 const Performance = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -43,25 +61,23 @@ const Performance = () => {
     <>
       <section className={section}>
         <div className={textAndImages}>
-        
           <div className={imageWrap}>
-            {performanceData.images.map((image, index) => 
-             (
-                <div className={imageContainer} key={index}>
-                  <GatsbyImage
-                    image={getImage(image.src)}
-                    alt={image.alt}
-                    className={imageElement}
-                  />
-                  <p className={imageText}>{image.text}</p>
-                </div>
-            ))}  
+            {performanceData.images.map((image, index) => (
+              <div className={imageContainer} key={index}>
+                <GatsbyImage
+                  image={getImage(image.src)}
+                  alt={image.alt}
+                  className={imageElement}
+                />
+                <p className={imageText}>{image.text}</p>
+              </div>
+            ))}
           </div>
 
           <div className={sectionHead}>
-              <h2>Performance</h2>
-              <p>{performanceData.Performance}</p>
-            </div>
+            <h2>Performance</h2>
+            <p>{performanceData.Performance}</p>
+          </div>
         </div>
       </section>
 
@@ -75,53 +91,29 @@ const Performance = () => {
             frameborder="0"
             allowfullscreen
           ></iframe>
-          <p>
+          <p className={vimeo}>
             The First time ever performance at an exhibition, 2Q18 at Testing
             Grounds in early 2018. This group exhibition was themed around a
             novel, 1Q84, by Haruki Murakami. Halfasian made 6 songs inspired by
-            surreal but realistic novel and performed at the opening event walking
-            around and played at unregular intervals
+            surreal but realistic novel and performed at the opening event
+            walking around and played at unregular intervals
           </p>
         </div>
-        <div className={videoWrap}>
-          <iframe
-            width="480"
-            height="270"
-            src="https://www.youtube.com/embed/SWlkk6X15ho"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <p>
-            First time ever playing with sound system and microphone at
-            Brunswick Ballroom supporting <a href="https://monnonealone.bandcamp.com/"> Monnone Alone</a> between lockdowns in
-            2021. How could we play sold out show under strict pandemic rules
-            and restrictions that we were sure that the show will be canceled.
-          </p>
-        </div>
-        <div className={videoWrap}>
-          <iframe
-            width="480"
-            height="270"
-            src="https://www.youtube.com/embed/V_KCngNhyu8"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <p>
-            We lost all our senses for a little while when our inspiration{" "}
-            <a href="https://burntsausages.bandcamp.com/album/the-white-bread-album">
-              The burnt Sausages
-            </a>
-            invited us to play at a show with them. Still living with the hype
-            and for ever.
-          </p>
-        </div>
+        {videos.map((video, index) => (
+          <div key={index} className={videoWrap}>
+            <VideoComponent
+              videoUrl={video.videoUrl}
+              width={video.width}
+              height={video.height}
+              title={video.title}
+              className={video}
+            />
+            <p>{video.text}</p>
+          </div>
+        ))}
       </div>
-    </>
-  );
-};
+          </>
+      )
+      }
 
 export default Performance;

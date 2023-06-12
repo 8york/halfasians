@@ -1,6 +1,6 @@
 import * as React from "react";
 import VideoComponent from "./video-usable";
-import { videoContainer, videoWrap } from "./video.module.css";
+import { videoContainer, videoWrap, videoArea } from "./video.module.css";
 
 const videos = [
   {
@@ -18,8 +18,7 @@ const videos = [
 ];
 const Video = () => {
   return (
-    <>
-      <h2> Videos</h2>
+    <section className={videoArea}>
       <div className={videoContainer}>
       {videos.map((video, index) => (
         <div key={index} className={videoWrap}>
@@ -28,7 +27,7 @@ const Video = () => {
         </div>
       ))}
       </div>
-    </>
+    </section>
   );
 
  }
