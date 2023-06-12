@@ -17,10 +17,6 @@ import {
 import { videoContainer, videoWrap, vimeo } from "./video.module.css";
 
 const videos = [
-  // {
-  //   videoUrl: "https://player.vimeo.com/video/258469872?h=3b1b6931b6",
-  //   text: "The First time ever performance at an exhibition, 2Q18 at Testing Grounds in early 2018. This group exhibition was themed around a novel, 1Q84, by Haruki Murakami. Halfasian made 6 songs inspired by surreal but realistic novel and performed at the opening event walking around and played at unregular intervals"
-  // },
   {
     videoUrl: "https://www.youtube.com/embed/SWlkk6X15ho",
     text: "First time ever playing with sound system and microphone at Brunswick Ballroom supporting Monnone Alonebetween lockdowns in 2021. How could we play sold out show under strict pandemic rules and restrictions that we were sure that the show will be canceled. ",
@@ -83,6 +79,7 @@ const Performance = () => {
 
       <div className={videoContainer}>
         <div className={videoWrap}>
+          {/* vimeo could not be rendered with using the reusable component as it is set for youtube so hard-coded */}
           <iframe
             title="vimeo-player"
             src="https://player.vimeo.com/video/258469872?h=3b1b6931b6"
@@ -99,6 +96,7 @@ const Performance = () => {
             walking around and played at unregular intervals
           </p>
         </div>
+        {/* rendering youtube videos using the data */}
         {videos.map((video, index) => (
           <div key={index} className={videoWrap}>
             <VideoComponent
