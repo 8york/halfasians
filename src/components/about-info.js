@@ -7,10 +7,12 @@ import {
         imageWrap,
         imageContainer,
         imageElement,
-        imageText
+        imageText,
+        textAndImages
 } from "./about.module.css"
 
 const AboutInfo = () => {
+  //getting data about, images captions and alt, with settings for images
   const data = useStaticQuery(graphql`
     query{
         allAboutJson {
@@ -37,20 +39,22 @@ const AboutInfo = () => {
     `);
 
   const aboutData = data.allAboutJson.nodes[0];
-  console.log(aboutData);
   return (
     <section className={section}>
+      <div className={textAndImages}>
       <div className={sectionHead}>
       <h2>About</h2>
-      <p>{aboutData.About}</p>
+      <p dangerouslySetInnerHTML={{__html: aboutData.About}} ></p>
       </div>
       <div className={imageWrap}>
       {aboutData.images.map((image, index) => (
         <div className={imageContainer} key={index}>
           <GatsbyImage image={getImage(image.src)} alt={image.alt} className={imageElement}/>
           <p className={imageText}>{image.text}</p>
+          
         </div>
       ))}
+      </div>
       </div>
     </section>
   );

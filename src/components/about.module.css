@@ -5,18 +5,32 @@ body{
 }
 
 .section-head{
-    padding: 1em 25%;
+    padding: 1em;
     background-color: rgb(1, 151, 1);
+    /* width: 45%;   */
+    margin-bottom: 1em;
 
-    
 }
 
+.image-wrap{
+    background-color: palevioletred;
+}
 @media (min-width: 700px) {
+    .section-head{
+        width: 45%;
+    }
+    .text-and-images {
+        display: flex;
+        /* align-items: center; */
+        /* height: fit-content; */
+        /* gap: 2em; */
+    }
     .image-wrap{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1em;   
+        gap: 1em;
+        width:55%;  
     }
     .image-text{
         max-width: 250px;

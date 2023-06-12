@@ -1,13 +1,23 @@
+html{
+  background-color: violet;
+}
 .container {
-    margin: auto;
-    max-width: 960px;
+    /* margin: auto;
+    max-width: 960px; */
     font-family: sans-serif;
+    background-color: violet;
+    height: 10em;
+    
+  }
+
+  h1{
+    font-size: 4em;
+    margin: .3em;
   }
   .site-title {
     font-size: 3rem;
     color: gray;
     font-weight: 700;
-    /* margin: 3rem 0; */
     text-align: center;
     display: none;
 
@@ -27,10 +37,18 @@
   .nav-link-text {
     color: rgb(84, 169, 69);
     text-decoration: none;
-    padding: .3em 1em;
+    padding: .5em 1em;
     background-color: pink;
     border-radius: 1em;
+    /* font-size: 2em; */
   }
+
+  @media (min-width: 700px) {
+   .nav-link-text{
+    font-size: 1.5em;
+   }
+  }
+
 
   .nav-link-text:hover {
     color: rgb(158, 64, 57);

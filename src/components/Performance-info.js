@@ -7,7 +7,8 @@ import {
   imageWrap,
   imageContainer,
   imageElement,
-  imageText
+  imageText,
+  sectionAndImages
 } from "./about.module.css"
 import {
   videoContainer,
@@ -42,7 +43,9 @@ const Performance = () => {
     const performanceData = data.allPerformanceJson.nodes[0];
     console.log(performanceData);
     return(
+      <div>
     <section className={section}>
+      <div className={sectionAndImages}>
       <div className={sectionHead}>
       <h2>Performance</h2>
       <p>{performanceData.Performance}</p>
@@ -57,6 +60,9 @@ const Performance = () => {
           </div>);
 })}
       </div>
+      </div>
+      </section>
+
       <div className={videoContainer}>
       <div className={videoWrap}>
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/258469872?h=3b1b6931b6" width="480" height="270" frameborder="0"    allowfullscreen></iframe>
@@ -71,7 +77,8 @@ const Performance = () => {
         <p>We lost all our senses for a little while when our inspiration <a href="https://burntsausages.bandcamp.com/album/the-white-bread-album">The burnt Sausages</a>invited us to play at a show with them. Still living with the hype and for ever.</p>
       </div>
       </div>
-    </section>
+      </div>
+
     )
 }
 
