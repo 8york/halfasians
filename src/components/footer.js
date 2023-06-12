@@ -30,8 +30,10 @@ const Footer = () => {
 
   return (
     <footer className={footer}>
+
       <div className={credits}>
         <p className={ptag}>All the images are courtesy of</p>
+        {/* rendering the links for image credits */}
         {data.allCreditsJson.nodes.map((item) => (
           <div className={creditList} key={item.name}>
             <a
@@ -51,6 +53,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          {/* rendering social icons using react icon plugin */}
           <FaInstagram size={30} className={social} />
         </a>
         <a

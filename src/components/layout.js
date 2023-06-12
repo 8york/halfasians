@@ -33,12 +33,12 @@ const Layout = ({ pageTitle, children }) => {
           </li>
           <li>
             <Link to="/about" className={navLinkText}>
-              About Halfasian
+              Halfasian?
             </Link>
           </li>
           <li>
             <Link to="/gallery" className={navLinkText}>
-              All to see
+              Gallery
             </Link>
           </li>
           {/* <li>

@@ -18,7 +18,7 @@ const videos = [
 ];
 const Video = () => {
   return (
-    <section className={videoArea}>
+    // rendering video and texts
       <div className={videoContainer}>
       {videos.map((video, index) => (
         <div key={index} className={videoWrap}>
@@ -27,7 +27,7 @@ const Video = () => {
         </div>
       ))}
       </div>
-    </section>
+
   );
 
  }

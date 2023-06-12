@@ -44,9 +44,11 @@ const AboutInfo = () => {
       <div className={textAndImages}>
       <div className={sectionHead}>
       <h2>About</h2>
+      {/* adding link to words in a string from json file */}
       <p dangerouslySetInnerHTML={{__html: aboutData.About}} ></p>
       </div>
       <div className={imageWrap}>
+        {/* rendering images from json file using gatsby plugin image */}
       {aboutData.images.map((image, index) => (
         <div className={imageContainer} key={index}>
           <GatsbyImage image={getImage(image.src)} alt={image.alt} className={imageElement}/>
