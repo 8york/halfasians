@@ -217,7 +217,6 @@ top:0;
    animation: jumptwo 3s infinite;
 }
 
-
 .another-eight-york{
    position: absolute;
    top: -10%;
@@ -233,11 +232,6 @@ top:0;
    text-align: center;
    font-size: 70px;
    font-weight: 800;
-   /* padding: 1em; */
-   /* background-color: rgba(233, 233, 48, .2); */
    border-radius: .3em;
    animation: shake 5s alternate infinite;
-   
-
-
 }
