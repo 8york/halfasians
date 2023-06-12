@@ -26,7 +26,7 @@
 
 }
 
-iframe{
+iframe, .video{
     border: 2px solid rgb(210, 156, 62);
     border-radius: .5em;
     margin-top: 1em;

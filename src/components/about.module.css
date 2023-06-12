@@ -8,29 +8,35 @@ body{
     padding: 1em;
     background-color: rgb(1, 151, 1);
     /* width: 45%;   */
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 
+}
+
+.section{
+    width: 100%;
 }
 
 .image-wrap{
     background-color: palevioletred;
+    /* margin-top: 1em; */
 }
 @media (min-width: 700px) {
     .section-head{
-        width: 45%;
+        width: 50%;
     }
     .text-and-images {
         display: flex;
-        /* align-items: center; */
-        /* height: fit-content; */
-        /* gap: 2em; */
-    }
+        margin-top: 5em;
+        /* align-items: first baseline; */
+        /* gap:2em; */
+         }
     .image-wrap{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 1em;
-        width:55%;  
+        width: 50%
+         
     }
     .image-text{
         max-width: 250px;
