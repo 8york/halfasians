@@ -7,6 +7,7 @@ h2{
     color: blanchedalmond;
     margin-bottom:0;
     font-size: 32px;
+    text-shadow: #113465 5px 5px 7px;;
 }
 p{
     padding:.4em;
@@ -19,12 +20,14 @@ p{
 }
 
 .image-wrap{
-    background-color: palevioletred;
+    background-color: rgb(231, 118, 77);
     display: block;
 }
 .image-text{
     max-width: 250px;
-    min-height: 3em;
+    margin: 0 auto;
+
+    /* min-height: 3em; */
 }
 @media (min-width:900px) {
     .section-head{
@@ -40,13 +43,16 @@ p{
         gap: 1em;
         width: 50%     
     }
+
+    .image-text{
+        min-height: 3em;
+    }
 }   
 .image-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    /* margin-top: 1.5em; */
 }
 
 .image-element{

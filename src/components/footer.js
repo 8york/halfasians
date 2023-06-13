@@ -1,7 +1,6 @@
 import * as React from "react";
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaYoutube } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
-
 import {
   footer,
   credits,
@@ -12,11 +11,11 @@ import {
   ptag,
 } from "./footer.module.css";
 
-
 const acknowledgement =
   "Halfasian would like to acknowledgethe Traditional Owners and Custodians of the land on which we live, the Peoples of the Kulin Nation. Halfasian also pay the respects to their Elders past and present";
 
 const Footer = () => {
+  // accessing the credit data for rendering
     const data = useStaticQuery(graphql`
     {
       allCreditsJson {
@@ -62,6 +61,13 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <FaYoutube size={30} className={social} />
+        </a>
+        <a
+          href="mailto:halfasian.da@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaEnvelope size={30} className={social} />
         </a>
       </div>
       <p className={ptag}>{acknowledgement}</p>

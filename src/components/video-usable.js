@@ -7,8 +7,8 @@ const VideoComponent =({videoUrl, title, className}) =>{
             <ReactPlayer
             url={videoUrl}
             title={title}
-            width={480}
-            height={270}
+            width={400}
+            height={253}
             frameborder="0"
             allowFullScreen={true}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

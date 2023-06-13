@@ -7,9 +7,9 @@ import { Lightbox } from "react-modal-image";
 const ImageModal = (props) => {
   return (
     <Lightbox
-      // medium={urlToLargeImageFile}
-      large={props.src}
-      alt="Hello World!"
+      medium={props.src}
+      // large={props.src}
+      // alt="Hello World!"
       onClose={props.closeModal}
     />
   );
