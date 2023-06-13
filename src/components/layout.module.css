@@ -1,13 +1,10 @@
 html{
-  background-color: violet;
+  background-image: url("../../assets/images/header.png");
 }
+
 .container {
-    /* margin: auto;
-    max-width: 960px; */
     font-family: sans-serif;
-    background-color: violet;
-    height: 10em;
-    
+    height: 12em;  
   }
 
   h1{
@@ -40,7 +37,6 @@ html{
     padding: .5em 1em;
     background-color: pink;
     border-radius: 1em;
-    /* font-size: 2em; */
   }
 
   @media (min-width: 700px) {

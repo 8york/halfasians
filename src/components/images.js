@@ -43,9 +43,6 @@ const ImageGallery = () => {
   const [showModal, setShowModal] = useState(false);
   const [currentImageUrl, setCurrentImageUrl] = useState(null);
 
-  // const showText =()=>{
-  //   setSelectedText(selectedText)
-  // }
   const showImage = (image) => {
     setShowModal(true);
     setCurrentImageUrl(image.publicURL);
