@@ -9,7 +9,6 @@ import {
   imageWrap,
   imageContainer,
   imageElement,
-  
   imageText,
   textAndImages,
 } from "./about.module.css";
@@ -27,6 +26,7 @@ const videos = [
   },
 ];
 const Performance = () => {
+  // access images alt and text from json file
   const data = useStaticQuery(graphql`
     query {
       allPerformanceJson {
@@ -83,8 +83,8 @@ const Performance = () => {
           <iframe
             title="vimeo-player"
             src="https://player.vimeo.com/video/258469872?h=3b1b6931b6"
-            width="480"
-            height="270"
+            width="400"
+            height="253"
             frameborder="0"
             allowfullscreen
           ></iframe>

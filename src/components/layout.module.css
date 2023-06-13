@@ -1,5 +1,7 @@
 html{
-  background-image: url("../../assets/images/header.png");
+  background-image: url("../../assets/images/b-g.png");
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
 }
 
 .container {
@@ -20,7 +22,7 @@ html{
 
   }
   .heading {
-    color: rebeccapurple;
+    color: rgb(229, 190, 32);
     text-align: center;
   }
  
