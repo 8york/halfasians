@@ -1,9 +1,12 @@
-body{
-    background-color: rgb(40, 120, 40);
+section{
+    background-image: linear-gradient(180deg, #d65cb8 25%, #6ca16f 25%, #6ca16f 50%, #d65cb8 50%, #d65cb8 75%, #6ca16f 75%, #6ca16f 100%);
+background-size: 70.00px 70.00px;
 }
 .gallery-two{
     font-size: 3em;
     color: bisque;
+    margin: 0;
+    padding-top: .3em;
     text-align: center;
 }
 
@@ -12,7 +15,6 @@ body{
     text-align: center;
 }
 .images-container{
-    /* max-width: 500px; */
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -5,7 +5,7 @@ import { videoContainer, videoWrap, videoArea } from "./video.module.css";
 const videos = [
   {
     videoUrl: "https://www.youtube.com/embed/b9fVx5yoSto",
-    text: "Halfasian is a big fan of Mark from  Monnone Alone and spends quite a bit of time talking about him at band meetings. Often sighted at a local park, Randazzo, Halfasian decided to write a song about/for Mark for his birthday and dedicate a music video for his birthday gift",
+    text: "Halfasian is a big fan of Mark from <a href='https://monnonealone.bandcamp.com/'>Monnone Alone</a> and spends quite a bit of time talking about him at band meetings. Often sighted at a local park, Randazzo, Halfasian decided to write a song about/for Mark for his birthday and dedicate a music video for his birthday gift",
   },
   {
     videoUrl: "https://www.youtube.com/embed/F3xyUW0Yvy4",
@@ -23,7 +23,8 @@ const Video = () => {
       {videos.map((video, index) => (
         <div key={index} className={videoWrap}>
           <VideoComponent videoUrl={video.videoUrl} title={video.title} className={video} />
-          <p>{video.text}</p>
+          <p dangerouslySetInnerHTML={{__html: video.text}}></p>
+          {/* <p>{video.text}</p> */}
         </div>
       ))}
       </div>

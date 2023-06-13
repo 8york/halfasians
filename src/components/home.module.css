@@ -1,5 +1,5 @@
 .container{
-    background-image: url('../../assets/images/ladyfinger.jpg');
+    background-image:url('../../assets/images/ladyfinger.jpg');
     min-height: 100vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -9,13 +9,20 @@
  
  
  .haha{
+    max-width: 14em;
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
-    gap: 1em;
+    justify-content: flex-start;
+    margin-left: 4em;
+    padding:3em;
+    background-color: gold;
+    animation: flash 4s linear infinite;
  }
  .h, .a{
-    font-size: 10em;
+    font-size: 9em;
     font-weight: 900;
+   
+
  }
 
  /* animation for haha */
@@ -27,70 +34,26 @@
    }
    }
 
-   @keyframes flash-reverse{
-      0%{opacity: .1;
-      }
-      100%{
-          opacity: 1;
-      }
-      }
-
- 
  .h{
     color:rgb(200, 102, 200);
-    animation: flash-reverse 1s linear infinite;
+    /* animation: flash-reverse 1s linear infinite; */
     
  }
- 
- 
+  
  .a{
     color: rgb(9, 99, 99);
-    animation: flash 1s linear infinite;
+    /* animation: flash 1s linear infinite; */
     animation-delay: 1s;
     /* animation: shake 5s linear infinite; */
  }
- 
   
-
- 
-/*  
- @keyframes jumptwo {
-    0% {
-        transform: translate(0);
-    }
-    50%{
-        transform: translateY(-10%);
-    }
-    100%{
-             transform: translateY(0);
-   }
-} */
-
-
-/* @keyframes swing  {
-   0% { transform: rotate(8deg); }
-   50% { transform: rotate(-8deg); }
-   100% { transform: rotate(8deg); }
-} */
-
 
  /* animation for dc */
  @keyframes clockrotate {
    100% {transform: rotate(360deg);}
 }
+
 /* animation for dc */
- @keyframes run {
-    0%  {
-        right:0;
-    }
-    50%{
-        right: 50%;
-        top:50%;
-    }
-    100%{
-        right:0;
-    }
- }/* animation for dc */
  @keyframes run {
    0%  {
        right:0;
@@ -139,18 +102,17 @@
    animation: jump 8s linear infinite, halfrotate 4s linear infinite;
 }
 
- /* @keyframes move-left {
+ @keyframes move-right {
     0%{
-        transform: translateX(-200%);
+        transform: translateX(0);
     }
     50%{
         transform: translateX(400%)
     }
     100%{
-        transform: translateX(50%);
-    }  
- } */
-
+        transform: translateX(100%);
+    } 
+}  
  @keyframes swing  {
     0% { transform: rotate(12deg); }
     50% { transform: rotate(-12deg); }
@@ -158,11 +120,10 @@
     }
  .sticker{
    position: absolute;
-   top:0;
-   left: 3em;
+   top:35%;
+   left:42%;
    opacity: .3;
    animation: swing 2s linear infinite;
-
 }
 
 
@@ -177,9 +138,6 @@
    transform: translateY(0);
 }
 }
-
-
-
 
 /* animation for is it music */
 @keyframes shake {
@@ -196,7 +154,7 @@
    color:blueviolet;
    padding: .5em 0;
    text-align: center;
-   font-size: 70px;
+   font-size: 120px;
    font-weight: 800;
    border-radius: .3em;
    animation: shake 5s alternate infinite;

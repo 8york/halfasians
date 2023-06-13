@@ -1,12 +1,13 @@
-
-@media (min-width: 900px) {
+.video-container{
+    background-color: rgb(243, 148, 15);
+    display: block;
+}
+@media (min-width: 1000px) {
     .video-container{
         display: flex;
         justify-content: center;
-        gap:1em;
-        /* margin-top: 2em; */
-        background-color: rgb(243, 148, 15);       
-    } 
+        gap:1em;         
+    }
 }
 .video-wrap {
     display: flex;
