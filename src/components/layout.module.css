@@ -7,13 +7,12 @@ body {
 }
 
 .container {
-  /* font-family: sans-serif; */
   height: 12em;
 }
 
 h1 {
   font-size: 4em;
-  /* margin: 0.3em; */
+  text-shadow: 9px 10px 5px rgb(40, 82, 11);
 }
 .site-title {
   font-size: 3rem;
