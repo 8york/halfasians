@@ -9,6 +9,7 @@ import {
   haha,
   h,
   a,
+  animationContainer,
   isItMusic,
 } from "./home.module.css";
 
@@ -21,7 +22,7 @@ const Home = () => {
       </div>
 
       {/* render images/ not dynamic with staticImage plugin */}
-      <div>
+      <div className={animationContainer}>
         <p className={isItMusic}>Is it music?</p>
 
         <StaticImage

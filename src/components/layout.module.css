@@ -1,21 +1,19 @@
 html {
   background-image: url("../../assets/images/b-g.png");
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
 }
-
 body {
   margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .container {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   height: 12em;
 }
 
 h1 {
   font-size: 4em;
-  margin: 0.3em;
+  /* margin: 0.3em; */
 }
 .site-title {
   font-size: 3rem;
@@ -28,7 +26,6 @@ h1 {
   color: rgb(229, 190, 32);
   text-align: center;
 }
-
 .nav-links {
   display: flex;
   justify-content: center;
@@ -36,21 +33,20 @@ h1 {
   gap: 2rem;
 }
 .nav-link-text {
-  color: rgb(84, 169, 69);
+  color: rgb(235, 119, 19);
   text-decoration: none;
   padding: 0.5em 1em;
-  background-color: pink;
+  background-color: #282886;
   border-radius: 1em;
+}
+.nav-link-text:hover {
+  color: rgb(60, 190, 53);
+  position: relative;
+  bottom: 4px;
 }
 
 @media (min-width: 700px) {
   .nav-link-text {
     font-size: 1.5em;
   }
-}
-
-.nav-link-text:hover {
-  color: rgb(158, 64, 57);
-  position: relative;
-  bottom: 4px;
 }
