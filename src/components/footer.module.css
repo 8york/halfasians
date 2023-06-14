@@ -1,57 +1,52 @@
 .footer {
-    background-color: rgb(1, 151, 1);
-    padding:1em;
+  background-color: rgb(1, 151, 1);
+  padding: 1em;
 }
 @media (min-width: 700px) {
-    .footer{
-        padding-left: 7em;
-    }
+  .footer {
+    padding-left: 7em;
+  }
 }
 
-.ptag{
-    color:rgb(250, 241, 241);
+.ptag {
+  color: rgb(250, 241, 241);
 }
 
 @media (min-width: 700px) {
-      .credits {
-        display: flex;
-        align-items: center;
-        gap: .5em;
-    }
-    .contact{
+  .credits {
     display: flex;
-    align-items: center; 
-    gap:.5em;
-}
+    align-items: center;
+    gap: 0.5em;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
 }
 
-
-.credit-list{
-    padding: .3em 1em;
-    background-color: pink;
-    border-radius: 1em;
-    max-width: fit-content;
-    margin-bottom: .3em;
-    
+.credit-list {
+  padding: 0.3em 1em;
+  background-color: #282886;
+  border-radius: 1em;
+  max-width: fit-content;
+  margin-bottom: 0.3em;
 }
 
 .credit-list:hover {
-    
-    position: relative;
-    bottom: 4px;
-  }
-
-.credit-link{
-    text-decoration: none;
-    color: rgb(84, 169, 69);
+  position: relative;
+  bottom: 4px;
 }
 
-.credit-link:hover{
-    color: rgb(158, 64, 57);
+.credit-link {
+  text-decoration: none;
+  color: rgb(235, 119, 19);
 }
 
-
+.credit-link:hover {
+  color: rgb(60, 190, 53);
+}
 
 .social {
-    color: violet;
+  color: violet;
 }
