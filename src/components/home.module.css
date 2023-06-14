@@ -8,7 +8,7 @@
 }
 
 .haha {
-  max-width: 14em;
+  max-width: 8em;
   border-radius: 50%;
   position: absolute;
   top: 2em;
@@ -18,12 +18,20 @@
   margin-left: 4em;
   padding: 3em;
   background-color: gold;
-  animation: flash 4s linear infinite;
+  animation: flash 1s linear alternate-reverse infinite;
 }
+
 .h,
 .a {
-  font-size: 9em;
+  font-size: 3em;
   font-weight: 900;
+}
+@media (min-width: 800px) {
+  .h,
+  .a {
+    font-size: 6em;
+    font-weight: 900;
+  }
 }
 
 /* animation for haha */
@@ -169,15 +177,24 @@
     transform: rotate(0deg);
   }
 }
+
 .is-it-music {
+  font-size: 3em;
+  font-weight: 800;
   max-width: 100vw;
   color: blueviolet;
   text-align: center;
   margin: 0;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  font-size: 120px;
-  font-weight: 800;
+
   animation: shake 5s alternate infinite;
+}
+
+@media (min-width: 800px) {
+  .is-it-music {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 120px;
+    font-weight: 800;
+  }
 }

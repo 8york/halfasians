@@ -1,4 +1,4 @@
-section {
+.gallery-section {
   background-image: linear-gradient(
     180deg,
     #d65cb8 25%,
@@ -44,9 +44,19 @@ section {
     color-change 7s linear infinite;
 }
 
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
 .gallery-ptag {
   color: bisque;
   text-align: center;
+  font-weight: 900;
+  animation: flash 1s alternate-reverse infinite;
 }
 .images-container {
   display: flex;
