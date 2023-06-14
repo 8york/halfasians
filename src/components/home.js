@@ -20,11 +20,9 @@ const Home = () => {
         <div className={h}> H</div>
         <div className={a}>A</div>
       </div>
-
+      <p className={isItMusic}>Is it music?</p>
       {/* render images/ not dynamic with staticImage plugin */}
       <div className={animationContainer}>
-        <p className={isItMusic}>Is it music?</p>
-
         <StaticImage
           className={dc}
           alt="DC dancing all over the screen"
