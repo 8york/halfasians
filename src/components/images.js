@@ -2,7 +2,6 @@ import * as React from "react";
 import { useState } from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-
 import ImageModal from "./modal/modal-image.js";
 
 import {
