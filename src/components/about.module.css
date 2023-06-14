@@ -1,143 +1,167 @@
-.section-head{
-    padding: 1em;
-    background-color: rgb(1, 151, 1);
+.section-head {
+  padding: 1em;
+  background-color: #88afd4;
 }
-h2{
-    text-align: center;
-    color: blanchedalmond;
-    margin-bottom:0;
-    font-size: 32px;
-    text-shadow: #113465 5px 5px 7px;;
+h2 {
+  text-align: center;
+  color: #1bab3a;
+  margin-bottom: 0;
+  font-size: 32px;
+  text-shadow: #113465 5px 5px 7px;
 }
-p{
-    padding:.4em;
-    font-size: 20px;
-    color:rgb(50, 50, 164);
-}
-
-.section{
-    width: 100%;
+p {
+  padding: 0.4em;
+  font-size: 20px;
+  color: blanchedalmond;
 }
 
-.image-wrap{
-    background-color: rgb(231, 118, 77);
-    display: block;
+.section {
+  width: 100%;
 }
-.image-text{
-    max-width: 250px;
-    margin: 0 auto;
 
-    /* min-height: 3em; */
+.image-wrap {
+  background-color: #c732bb;
+  display: block;
 }
-@media (min-width:900px) {
-    .section-head{
-        width: 50%;
-    }
-    .text-and-images {
-        display: flex;
-         }
-    .image-wrap{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-        width: 50%     
-    }
+.image-text {
+  max-width: 250px;
+  margin: 0 auto;
 
-    .image-text{
-        min-height: 3em;
-    }
-}   
-.image-container{
+  /* min-height: 3em; */
+}
+@media (min-width: 900px) {
+  .section-head {
+    width: 50%;
+  }
+  .text-and-images {
     display: flex;
-    flex-direction: column;
+  }
+  .image-wrap {
+    display: flex;
     align-items: center;
-    padding: 1em;
+    justify-content: center;
+    gap: 1em;
+    width: 50%;
+  }
+
+  .image-text {
+    min-height: 3em;
+  }
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
 }
 
-.image-element{
-    border-radius: .3em;
-    box-shadow: 3px 3px 7px #222121;
+.image-element {
+  border-radius: 0.3em;
+  box-shadow: 3px 3px 7px #222121;
 }
 
-.space-between{
-    display: none;
+.space-between {
+  display: none;
 }
 
-@media (min-width:750px) {
-
-.space-between{
+@media (min-width: 750px) {
+  .space-between {
     height: 300px;
     display: flex;
-}
+  }
 
-.block{
-
-        background-image: linear-gradient(40deg, #c732bb 25%, #88afd4 25%, #88afd4 50%, #c732bb 50%, #c732bb 75%, #88afd4 75%, #88afd4 100%);
-        background-size: 31.11px 26.11px;
-        width: 38%;
+  .block {
+    background-image: linear-gradient(
+      40deg,
+      #c732bb 25%,
+      #88afd4 25%,
+      #88afd4 50%,
+      #c732bb 50%,
+      #c732bb 75%,
+      #88afd4 75%,
+      #88afd4 100%
+    );
+    background-size: 31.11px 26.11px;
+    width: 38%;
     position: relative;
-}
-/* animation for 8york */
-@keyframes swing  {
-    0% { transform: rotate(12deg); }
-    50% { transform: rotate(-12deg); }
-    100% { transform: rotate(12deg); }
+  }
+  /* animation for 8york */
+  @keyframes swing {
+    0% {
+      transform: rotate(12deg);
     }
-  .eightyork{
+    50% {
+      transform: rotate(-12deg);
+    }
+    100% {
+      transform: rotate(12deg);
+    }
+  }
+  .eightyork {
     position: absolute;
-    right:5%;
+    right: 5%;
     animation: swing 2s linear infinite, halfrotate 3s linear alternate infinite;
   }
 
-  .block-two{
-    background-image: linear-gradient(139deg, #c732bb 25%, #88afd4 25%, #88afd4 50%, #c732bb 50%, #c732bb 75%, #88afd4 75%, #88afd4 100%);
-    background-size: 30.49px 26.50px;
+  .block-two {
+    background-image: linear-gradient(
+      139deg,
+      #c732bb 25%,
+      #88afd4 25%,
+      #88afd4 50%,
+      #c732bb 50%,
+      #c732bb 75%,
+      #88afd4 75%,
+      #88afd4 100%
+    );
+    background-size: 30.49px 26.5px;
     width: 38%;
-}
+  }
 
-/* animation for dc */
+  /* animation for dc */
   @keyframes jump {
     0% {
-        transform: translate(0);
+      transform: translate(0);
     }
-    50%{
-        transform: translateY(10%);
-        left: 10%
+    50% {
+      transform: translateY(10%);
+      left: 10%;
     }
-    100%{
-             transform: translateY(0);
-   } 
- }
- /* animation for dc and 8york */
- @keyframes halfrotate {
-    100%{
-        transform: rotateY(180deg);
-    }  
- } 
+    100% {
+      transform: translateY(0);
+    }
+  }
+  /* animation for dc and 8york */
+  @keyframes halfrotate {
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
 
-.dc-jumps {
+  .dc-jumps {
     animation: jump 3s linear infinite, halfrotate 3s linear infinite;
-}
-/* middleblock showing flashing haha */
-.middle-block{
-    background-color:rgb(210, 212, 100);
+  }
+  /* middleblock showing flashing haha */
+  .middle-block {
+    background-color: rgb(210, 212, 100);
     width: 26%;
     position: relative;
-}
-/* animation for haha */
-@keyframes color-change {
-    from {background-color: #c732bb ;}
-    to {background-color: green;}
-}
-.haha{
+  }
+  /* animation for haha */
+  @keyframes color-change {
+    from {
+      background-color: #c732bb;
+    }
+    to {
+      background-color: green;
+    }
+  }
+  .haha {
     font-size: 7em;
     transform: translateY(70%);
     text-align: center;
-    background-color:#c732bb;
+    background-color: #c732bb;
     color: #88afd4;
     animation: color-change 2s infinite;
-}
-
-
+  }
 }

@@ -7,6 +7,7 @@ import ImageModal from "./modal/modal-image.js";
 
 import {
   imagesContainer,
+  gallerySection,
   galleryImg,
   galleryTwo,
   galleryPtag,
@@ -49,7 +50,7 @@ const ImageGallery = () => {
   };
 
   return (
-    <section>
+    <section className={gallerySection}>
       <h2 className={galleryTwo}>What a Gallery</h2>
       <p className={galleryPtag}>CLICK ON!</p>
       <div className={imagesContainer}>
@@ -77,12 +78,12 @@ const ImageGallery = () => {
           );
         })}
       </div>
-      { showModal &&
-      <ImageModal
-        closeModal={() => setShowModal(false)}
-        src={currentImageUrl}
-      />
-      }
+      {showModal && (
+        <ImageModal
+          closeModal={() => setShowModal(false)}
+          src={currentImageUrl}
+        />
+      )}
     </section>
   );
 };
