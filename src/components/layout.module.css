@@ -12,7 +12,12 @@ body {
 
 h1 {
   font-size: 4em;
-  text-shadow: 9px 10px 5px rgb(40, 82, 11);
+  text-shadow: -18px 18px 0 rgb(66, 45, 45);
+
+  opacity: 0.9;
+
+  text-shadow: -18px 18px 0 rgb(66, 45, 45);
+  /* text-shadow: 9px 10px 5px rgb(40, 82, 11); */
 }
 .site-title {
   font-size: 3rem;
