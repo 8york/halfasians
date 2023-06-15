@@ -38,14 +38,18 @@ h1 {
   gap: 2rem;
 }
 .nav-link-text {
-  color: rgb(235, 119, 19);
+  color: rgb(60, 190, 53);
   text-decoration: none;
   padding: 0.5em 1em;
   background-color: #282886;
+  border-right: 3px solid rgb(235, 120, 20);
+  border-bottom: 1px solid rgb(235, 120, 20);
   border-radius: 1em;
 }
 .nav-link-text:hover {
-  color: rgb(60, 190, 53);
+  color: rgb(235, 120, 20);
+  border-right: 3px solid rgb(60, 190, 53);
+  border-bottom: 3px solid rgb(60, 190, 53);
   position: relative;
   bottom: 4px;
 }
