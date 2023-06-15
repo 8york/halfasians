@@ -32,7 +32,7 @@ const AboutInfo = () => {
                 gatsbyImageData(
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
-                  width: 300
+                  width: 250
                   aspectRatio: 1
                   transformOptions: { fit: COVER }
                 )
@@ -83,7 +83,8 @@ const AboutInfo = () => {
           <StaticImage
             alt="DC dancing all over the screen"
             src="../../assets/images/5HalfAsian.png"
-            className={dcJumps}/>
+            className={dcJumps}
+          />
         </div>
       </div>
     </section>

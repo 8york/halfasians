@@ -56,7 +56,7 @@
   color: bisque;
   text-align: center;
   font-weight: 900;
-  animation: flash 1s alternate-reverse infinite;
+  animation: flash 2s alternate-reverse infinite;
 }
 .images-container {
   display: flex;
