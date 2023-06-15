@@ -11,8 +11,14 @@ body {
 }
 
 h1 {
-  font-size: 4em;
-  text-shadow: 9px 10px 5px rgb(40, 82, 11);
+  font-size: 5em;
+  /* text-shadow: -18px 18px 0 rgb(66, 45, 45); */
+  opacity: 0.9;
+
+  text-shadow: 3px -3px rgb(236, 110, 20), 6px -6px rgb(229, 190, 32),
+    9px -9px rgb(7, 112, 7), 12px -12px rgb(45, 45, 195),
+    15px -15px rgb(65, 2, 110), 18px -18px rgb(170, 80, 170);
+  /* text-shadow: 9px 10px 5px rgb(40, 82, 11); */
 }
 .site-title {
   font-size: 3rem;
@@ -22,7 +28,7 @@ h1 {
   display: none;
 }
 .heading {
-  color: rgb(229, 190, 32);
+  color: red;
   text-align: center;
 }
 .nav-links {
