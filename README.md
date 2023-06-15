@@ -29,4 +29,5 @@ The aim of this website is to create a website to showcase the ongoing collabora
 - changing the json file to MDX file for data storage
 - Redeploy with unique domain name
 - Currently modal images function with a lightbox plugin which gives a clean aethetics but is not quite coherent to the rest of the site. This can change in the future
-- add small interactivity in the second page, at the moment it is text heavy.
+- add small interactivity in the second page, at the moment it is text heavy
+- Adding shopify plugin to have online sale of merchandise

@@ -23,13 +23,19 @@ p {
   background-color: #c732bb;
   display: block;
 }
+
+@media (min-width: 680px) and (max-width: 1200px) {
+  .image-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .image-text {
   max-width: 250px;
-  margin: 0 auto;
-
-  /* min-height: 3em; */
+  /* margin: 0 auto; */
 }
-@media (min-width: 900px) {
+@media (min-width: 1201px) {
   .section-head {
     width: 50%;
   }
@@ -45,7 +51,7 @@ p {
   }
 
   .image-text {
-    min-height: 3em;
+    max-height: 3em;
   }
 }
 .image-container {
