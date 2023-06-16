@@ -12,16 +12,16 @@ import {
 } from "./footer.module.css";
 
 const acknowledgement =
-  "Halfasian would like to acknowledgethe Traditional Owners and Custodians of the land on which we live, the Peoples of the Kulin Nation. Halfasian also pay the respects to their Elders past and present";
+  "Halfasian would like to acknowledgethe Traditional Owners and Custodians of the land on which we live, the Peoples of the Kulin Nation. We pay the respects to their Elders pst and present.";
 
 const Footer = () => {
   // accessing the credit data for rendering
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
       allCreditsJson {
         nodes {
-            name
-            link
+          name
+          link
         }
       }
     }
@@ -29,7 +29,6 @@ const Footer = () => {
 
   return (
     <footer className={footer}>
-
       <div className={credits}>
         <p className={ptag}>All the images are courtesy of</p>
         {/* rendering the links for image credits */}
@@ -38,7 +37,8 @@ const Footer = () => {
             <a
               className={creditLink}
               href={item.link}
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >{` ${item.name} `}</a>
           </div>
         ))}
