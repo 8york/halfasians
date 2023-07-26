@@ -1,0 +1,22 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: rgb(250, 241, 241);
+}
+
+input,
+button {
+  width: 15em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+textarea {
+  height: 5em;
+  width: 40em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}

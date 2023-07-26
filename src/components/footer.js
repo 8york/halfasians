@@ -1,6 +1,7 @@
 import * as React from "react";
 import { FaEnvelope, FaInstagram, FaYoutube } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
+import ContactForm from "./contact-form";
 import {
   footer,
   credits,
@@ -70,6 +71,7 @@ const Footer = () => {
           <FaEnvelope size={30} className={social} />
         </a>
       </div>
+      <ContactForm />
       <p className={ptag}>{acknowledgement}</p>
     </footer>
   );

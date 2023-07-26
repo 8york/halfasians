@@ -10,6 +10,7 @@
 
 .ptag {
   color: rgb(250, 241, 241);
+  margin: 0;
 }
 
 @media (min-width: 700px) {
